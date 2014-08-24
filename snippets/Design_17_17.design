@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <say-this comment="false" x="26" y="40">
+                    <int id="0" val="Get"/>
+                </say-this>
+                <if comment="false" x="26" y="60">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="85">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="128">
+                                    <group eventID="-1" id="-1">
+                                        <set-val-17-7 comment="false" x="59" y="158">
+                                            <true comment="false" id="0" x="0" y="0"/>
+                                        </set-val-17-7>
+                                        <play-sound-channel comment="false" x="59" y="183">
+                                            <int id="0" val="0"/>
+                                            <get-val-17-3 comment="false" id="1" x="0" y="0"/>
+                                            <get-val-17-4 comment="false" id="2" x="0" y="0"/>
+                                        </play-sound-channel>
+                                        <for-each comment="false" x="59" y="215">
+                                            <group eventID="1" id="-1">
+                                                <if comment="false" x="70" y="240">
+                                                    <group eventID="1" id="-1">
+                                                        <comment-short comment="false" x="81" y="285">
+                                                            <int id="0" val="Events"/>
+                                                        </comment-short>
+                                                        <if comment="false" x="81" y="305">
+                                                            <group eventID="1" id="-1">
+                                                                <set-game-att comment="false" x="92" y="355">
+                                                                    <get-item comment="false" id="0" x="0" y="0">
+                                                                        <str-split comment="false" id="0" x="0" y="0">
+                                                                            <get-item comment="false" id="0" x="0" y="0">
+                                                                                <str-split comment="false" id="0" x="0" y="0">
+                                                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                                                    <int id="1" val="|"/>
+                                                                                </str-split>
+                                                                                <int id="1" val="1"/>
+                                                                            </get-item>
+                                                                            <int id="1" val=","/>
+                                                                        </str-split>
+                                                                        <int id="1" val="1"/>
+                                                                    </get-item>
+                                                                    <get-item comment="false" id="1" x="0" y="0">
+                                                                        <str-split comment="false" id="0" x="0" y="0">
+                                                                            <get-item comment="false" id="0" x="0" y="0">
+                                                                                <str-split comment="false" id="0" x="0" y="0">
+                                                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                                                    <int id="1" val="|"/>
+                                                                                </str-split>
+                                                                                <int id="1" val="1"/>
+                                                                            </get-item>
+                                                                            <int id="1" val=","/>
+                                                                        </str-split>
+                                                                        <int id="1" val="2"/>
+                                                                    </get-item>
+                                                                </set-game-att>
+                                                            </group>
+                                                            <eq comment="false" id="0" x="0" y="0">
+                                                                <int id="0" val="Set Value"/>
+                                                                <get-item comment="false" id="1" x="0" y="0">
+                                                                    <str-split comment="false" id="0" x="0" y="0">
+                                                                        <get-item comment="false" id="0" x="0" y="0">
+                                                                            <str-split comment="false" id="0" x="0" y="0">
+                                                                                <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                                                <int id="1" val="|"/>
+                                                                            </str-split>
+                                                                            <int id="1" val="1"/>
+                                                                        </get-item>
+                                                                        <int id="1" val=","/>
+                                                                    </str-split>
+                                                                    <int id="1" val="0"/>
+                                                                </get-item>
+                                                            </eq>
+                                                        </if>
+                                                        <if comment="false" x="81" y="412">
+                                                            <group eventID="1" id="-1">
+                                                                <scene-shout comment="false" x="92" y="462">
+                                                                    <get-item comment="false" id="0" x="0" y="0">
+                                                                        <str-split comment="false" id="0" x="0" y="0">
+                                                                            <get-item comment="false" id="0" x="0" y="0">
+                                                                                <str-split comment="false" id="0" x="0" y="0">
+                                                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                                                    <int id="1" val="|"/>
+                                                                                </str-split>
+                                                                                <int id="1" val="1"/>
+                                                                            </get-item>
+                                                                            <int id="1" val=","/>
+                                                                        </str-split>
+                                                                        <int id="1" val="1"/>
+                                                                    </get-item>
+                                                                </scene-shout>
+                                                            </group>
+                                                            <eq comment="false" id="0" x="0" y="0">
+                                                                <int id="0" val="Trigger"/>
+                                                                <get-item comment="false" id="1" x="0" y="0">
+                                                                    <str-split comment="false" id="0" x="0" y="0">
+                                                                        <get-item comment="false" id="0" x="0" y="0">
+                                                                            <str-split comment="false" id="0" x="0" y="0">
+                                                                                <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                                                <int id="1" val="|"/>
+                                                                            </str-split>
+                                                                            <int id="1" val="1"/>
+                                                                        </get-item>
+                                                                        <int id="1" val=","/>
+                                                                    </str-split>
+                                                                    <int id="1" val="0"/>
+                                                                </get-item>
+                                                            </eq>
+                                                        </if>
+                                                        <if comment="false" x="81" y="519">
+                                                            <group eventID="1" id="-1">
+                                                                <scene-change-new comment="false" x="92" y="569">
+                                                                    <scenebyname comment="false" id="0" x="0" y="0">
+                                                                        <get-item comment="false" id="0" x="0" y="0">
+                                                                            <str-split comment="false" id="0" x="0" y="0">
+                                                                                <get-item comment="false" id="0" x="0" y="0">
+                                                                                    <str-split comment="false" id="0" x="0" y="0">
+                                                                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                                                        <int id="1" val="|"/>
+                                                                                    </str-split>
+                                                                                    <int id="1" val="1"/>
+                                                                                </get-item>
+                                                                                <int id="1" val=","/>
+                                                                            </str-split>
+                                                                            <int id="1" val="1"/>
+                                                                        </get-item>
+                                                                    </scenebyname>
+                                                                    <int id="1" val="0"/>
+                                                                    <get-item comment="false" id="2" x="0" y="0">
+                                                                        <str-split comment="false" id="0" x="0" y="0">
+                                                                            <get-item comment="false" id="0" x="0" y="0">
+                                                                                <str-split comment="false" id="0" x="0" y="0">
+                                                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                                                    <int id="1" val="|"/>
+                                                                                </str-split>
+                                                                                <int id="1" val="1"/>
+                                                                            </get-item>
+                                                                            <int id="1" val=","/>
+                                                                        </str-split>
+                                                                        <int id="1" val="2"/>
+                                                                    </get-item>
+                                                                    <int id="3" val="0"/>
+                                                                    <get-item comment="false" id="4" x="0" y="0">
+                                                                        <str-split comment="false" id="0" x="0" y="0">
+                                                                            <get-item comment="false" id="0" x="0" y="0">
+                                                                                <str-split comment="false" id="0" x="0" y="0">
+                                                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                                                    <int id="1" val="|"/>
+                                                                                </str-split>
+                                                                                <int id="1" val="1"/>
+                                                                            </get-item>
+                                                                            <int id="1" val=","/>
+                                                                        </str-split>
+                                                                        <int id="1" val="3"/>
+                                                                    </get-item>
+                                                                </scene-change-new>
+                                                                <if comment="false" x="92" y="626">
+                                                                    <group eventID="1" id="-1">
+                                                                        <create-actor3-next comment="false" x="103" y="681">
+                                                                            <pick-type-by-name comment="false" id="0" x="0" y="0">
+                                                                                <get-item comment="false" id="0" x="0" y="0">
+                                                                                    <str-split comment="false" id="0" x="0" y="0">
+                                                                                        <get-item comment="false" id="0" x="0" y="0">
+                                                                                            <str-split comment="false" id="0" x="0" y="0">
+                                                                                                <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                                                                <int id="1" val="|"/>
+                                                                                            </str-split>
+                                                                                            <int id="1" val="1"/>
+                                                                                        </get-item>
+                                                                                        <int id="1" val=","/>
+                                                                                    </str-split>
+                                                                                    <int id="1" val="4"/>
+                                                                                </get-item>
+                                                                            </pick-type-by-name>
+                                                                            <as-number comment="false" id="1" x="0" y="0">
+                                                                                <get-item comment="false" id="0" x="0" y="0">
+                                                                                    <str-split comment="false" id="0" x="0" y="0">
+                                                                                        <get-item comment="false" id="0" x="0" y="0">
+                                                                                            <str-split comment="false" id="0" x="0" y="0">
+                                                                                                <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                                                                <int id="1" val="|"/>
+                                                                                            </str-split>
+                                                                                            <int id="1" val="1"/>
+                                                                                        </get-item>
+                                                                                        <int id="1" val=","/>
+                                                                                    </str-split>
+                                                                                    <int id="1" val="5"/>
+                                                                                </get-item>
+                                                                            </as-number>
+                                                                            <as-number comment="false" id="2" x="0" y="0">
+                                                                                <get-item comment="false" id="0" x="0" y="0">
+                                                                                    <str-split comment="false" id="0" x="0" y="0">
+                                                                                        <get-item comment="false" id="0" x="0" y="0">
+                                                                                            <str-split comment="false" id="0" x="0" y="0">
+                                                                                                <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                                                                <int id="1" val="|"/>
+                                                                                            </str-split>
+                                                                                            <int id="1" val="1"/>
+                                                                                        </get-item>
+                                                                                        <int id="1" val=","/>
+                                                                                    </str-split>
+                                                                                    <int id="1" val="6"/>
+                                                                                </get-item>
+                                                                            </as-number>
+                                                                            <int id="3" val="0"/>
+                                                                        </create-actor3-next>
+                                                                    </group>
+                                                                    <not comment="false" id="0" x="0" y="0">
+                                                                        <eq comment="false" id="0" x="0" y="0">
+                                                                            <int id="0" val="[No Actor]"/>
+                                                                            <get-item comment="false" id="1" x="0" y="0">
+                                                                                <str-split comment="false" id="0" x="0" y="0">
+                                                                                    <get-item comment="false" id="0" x="0" y="0">
+                                                                                        <str-split comment="false" id="0" x="0" y="0">
+                                                                                            <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                                                            <int id="1" val="|"/>
+                                                                                        </str-split>
+                                                                                        <int id="1" val="1"/>
+                                                                                    </get-item>
+                                                                                    <int id="1" val=","/>
+                                                                                </str-split>
+                                                                                <int id="1" val="4"/>
+                                                                            </get-item>
+                                                                        </eq>
+                                                                    </not>
+                                                                </if>
+                                                            </group>
+                                                            <eq comment="false" id="0" x="0" y="0">
+                                                                <int id="0" val="Change Scene"/>
+                                                                <get-item comment="false" id="1" x="0" y="0">
+                                                                    <str-split comment="false" id="0" x="0" y="0">
+                                                                        <get-item comment="false" id="0" x="0" y="0">
+                                                                            <str-split comment="false" id="0" x="0" y="0">
+                                                                                <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                                                <int id="1" val="|"/>
+                                                                            </str-split>
+                                                                            <int id="1" val="1"/>
+                                                                        </get-item>
+                                                                        <int id="1" val=","/>
+                                                                    </str-split>
+                                                                    <int id="1" val="0"/>
+                                                                </get-item>
+                                                            </eq>
+                                                        </if>
+                                                    </group>
+                                                    <eq comment="false" id="0" x="0" y="0">
+                                                        <get-val-17-8 comment="false" id="0" x="0" y="0"/>
+                                                        <as-number comment="false" id="1" x="0" y="0">
+                                                            <get-item comment="false" id="0" x="0" y="0">
+                                                                <str-split comment="false" id="0" x="0" y="0">
+                                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                                    <int id="1" val="|"/>
+                                                                </str-split>
+                                                                <int id="1" val="0"/>
+                                                            </get-item>
+                                                        </as-number>
+                                                    </eq>
+                                                </if>
+                                            </group>
+                                            <get-val-17-10 comment="false" id="0" x="0" y="0"/>
+                                        </for-each>
+                                        <dolater comment="false" x="59" y="786">
+                                            <group eventID="-1" id="-1">
+                                                <set-val-17-7 comment="false" x="70" y="818">
+                                                    <false comment="false" id="0" x="0" y="0"/>
+                                                </set-val-17-7>
+                                                <scene-shout comment="false" x="70" y="843">
+                                                    <int id="0" val="DeactivateOptions"/>
+                                                </scene-shout>
+                                            </group>
+                                            <get-val-17-2 comment="false" id="0" x="0" y="0"/>
+                                            <ACTOR eid="lastcreated" id="2"/>
+                                        </dolater>
+                                    </group>
+                                    <not comment="false" id="0" x="0" y="0">
+                                        <get-val-17-7 comment="false" id="0" x="0" y="0"/>
+                                    </not>
+                                </if>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <keystate comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                    <get-val-17-1 comment="false" id="1" x="0" y="0"/>
+                                </keystate>
+                                <not comment="false" id="1" x="0" y="0">
+                                    <is-transitioning comment="false" id="0" x="0" y="0"/>
+                                </not>
+                            </and>
+                        </if>
+                    </group>
+                    <get-val-17-6 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else comment="false" x="26" y="911">
+                    <group eventID="-1" id="-1">
+                        <set-val-17-7 comment="false" x="37" y="931">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-17-7>
+                    </group>
+                </else>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-val-17-6 comment="false" x="37" y="65">
+                            <as-boolean comment="false" id="0" x="0" y="0">
+                                <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="Display Options"/>
+                                    <int id="1" val="_Activated"/>
+                                </scene-get-attribute>
+                            </as-boolean>
+                        </set-val-17-6>
+                        <set-val-17-8 comment="false" x="37" y="95">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="Display Options"/>
+                                    <int id="1" val="_CurrentOption"/>
+                                </scene-get-attribute>
+                            </as-number>
+                        </set-val-17-8>
+                    </group>
+                    <scene-has-snippet comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Display Options"/>
+                    </scene-has-snippet>
+                </if>
+            </group>
+            <int id="0" val="Get"/>
+        </receive-message>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

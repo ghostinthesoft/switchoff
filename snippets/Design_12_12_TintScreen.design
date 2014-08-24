@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-val-12-1 comment="false" x="37" y="65">
+                            <get-val-12-5 comment="false" id="0" x="0" y="0"/>
+                        </set-val-12-1>
+                    </group>
+                    <get-val-12-4 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <to-screen-space comment="false" x="37" y="65"/>
+                        <set-color2 comment="false" x="37" y="85">
+                            <int id="0" val="3"/>
+                        </set-color2>
+                        <set-alpha comment="false" x="37" y="112">
+                            <get-val-12-1 comment="false" id="0" x="0" y="0"/>
+                        </set-alpha>
+                        <drawfill-rect comment="false" x="37" y="137">
+                            <int id="0" val="1"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                            <screen-wh comment="false" id="3" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </screen-wh>
+                            <screen-wh comment="false" id="4" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </screen-wh>
+                        </drawfill-rect>
+                    </group>
+                    <get-val-12-4 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-12-4 comment="false" x="26" y="40">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-12-4>
+                <tween-number comment="false" x="26" y="65">
+                    <get-val-12-2 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="_Opacity"/>
+                    <get-val-12-5 comment="false" id="2" x="0" y="0"/>
+                    <int id="3" val="0"/>
+                </tween-number>
+            </group>
+            <int id="0" val="StartTintScreen"/>
+        </receive-message>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <tween-number comment="false" x="26" y="40">
+                    <get-val-12-2 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="_Opacity"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                </tween-number>
+                <dolater comment="false" x="26" y="72">
+                    <group eventID="-1" id="-1">
+                        <set-val-12-4 comment="false" x="37" y="104">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-12-4>
+                    </group>
+                    <get-val-12-2 comment="false" id="0" x="0" y="0"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="RemoveTintScreen"/>
+        </receive-message>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <receiver-1-22 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <scene-set-attribute comment="false" x="26" y="45">
+                    <int id="0" val="Tint Screen"/>
+                    <int id="1" val="_TintOpacity"/>
+                    <get-byobval-12-410-1 comment="false" id="2" x="0" y="0"/>
+                </scene-set-attribute>
+                <scene-set-attribute comment="false" x="26" y="70">
+                    <int id="0" val="Tint Screen"/>
+                    <int id="1" val="_ScreenColor"/>
+                    <get-byobval-12-410-0 comment="false" id="2" x="0" y="0"/>
+                </scene-set-attribute>
+                <scene-set-attribute comment="false" x="26" y="95">
+                    <int id="0" val="Tint Screen"/>
+                    <int id="1" val="_FadeTime"/>
+                    <get-byobval-12-410-2 comment="false" id="2" x="0" y="0"/>
+                </scene-set-attribute>
+                <scene-say comment="false" x="26" y="120">
+                    <int id="0" val="Tint Screen"/>
+                    <int id="1" val="StartTintScreen"/>
+                </scene-say>
+            </group>
+            <get-byobval-12-410-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-12-410-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-12-410-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-1-22>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <receiver-2-21 comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <scene-set-attribute comment="false" x="26" y="45">
+                    <int id="0" val="Tint Screen"/>
+                    <int id="1" val="_FadeTime"/>
+                    <get-byobval-12-411-0 comment="false" id="2" x="0" y="0"/>
+                </scene-set-attribute>
+                <scene-say comment="false" x="26" y="70">
+                    <int id="0" val="Tint Screen"/>
+                    <int id="1" val="RemoveTintScreen"/>
+                </scene-say>
+            </group>
+            <get-byobval-12-411-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-2-21>
+    </group>
+    <group eventID="6" id="-1"/>
+</groups>

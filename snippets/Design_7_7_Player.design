@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-7-1 comment="false" x="26" y="40">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-7-1>
+            </group>
+            <int id="0" val="active_player"/>
+        </event-custom>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-7-2 comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                </set-val-7-2>
+                <if comment="false" x="26" y="60">
+                    <group eventID="2" id="-1">
+                        <comment-short comment="false" x="37" y="85">
+                            <int id="0" val="tant que le joueur n&amp;#039;est pas actif"/>
+                        </comment-short>
+                        <camera-move comment="false" x="37" y="105">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                                <int id="1" val="0"/>
+                            </plus>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                                <int id="1" val="0"/>
+                            </plus>
+                        </camera-move>
+                        <set-val-7-2 comment="false" x="37" y="143">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <as-number comment="false" id="0" x="0" y="0">
+                                    <keystate comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <CONTROL eid="3" id="1"/>
+                                    </keystate>
+                                </as-number>
+                                <as-number comment="false" id="1" x="0" y="0">
+                                    <keystate comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <CONTROL eid="2" id="1"/>
+                                    </keystate>
+                                </as-number>
+                            </minus>
+                        </set-val-7-2>
+                    </group>
+                    <get-val-7-1 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else comment="false" x="26" y="198">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="218">
+                            <group eventID="2" id="-1">
+                                <set-val-7-2 comment="false" x="48" y="266">
+                                    <int id="0" val="1"/>
+                                </set-val-7-2>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <times comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0.5"/>
+                                        <scene-wh comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="0"/>
+                                        </scene-wh>
+                                    </times>
+                                    <int id="1" val="32"/>
+                                </minus>
+                            </less>
+                        </if>
+                    </group>
+                </else>
+                <if comment="false" x="26" y="310">
+                    <group eventID="3" id="-1">
+                        <set-dxy comment="false" x="37" y="340">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <times comment="false" id="2" x="0" y="0">
+                                <get-val-7-2 comment="false" id="0" x="0" y="0"/>
+                                <get-val-7-3 comment="false" id="1" x="0" y="0"/>
+                            </times>
+                        </set-dxy>
+                    </group>
+                    <noteq comment="false" id="0" x="0" y="0">
+                        <get-val-7-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </noteq>
+                </if>
+                <else comment="false" x="26" y="389">
+                    <group eventID="3" id="-1">
+                        <set-dxy comment="false" x="37" y="409">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                    </group>
+                </else>
+                <if comment="false" x="26" y="448">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="478">
+                            <group eventID="2" id="-1">
+                                <if comment="false" x="48" y="503">
+                                    <group eventID="-1" id="-1">
+                                        <setanim comment="false" x="59" y="541">
+                                            <ACTOR eid="this" id="0"/>
+                                            <get-val-7-4 comment="false" id="1" x="0" y="0"/>
+                                        </setanim>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <getanim comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                        </getanim>
+                                        <get-val-7-5 comment="false" id="1" x="0" y="0"/>
+                                    </eq>
+                                </if>
+                                <else-if comment="false" x="48" y="585">
+                                    <group eventID="3" id="-1">
+                                        <setanim comment="false" x="59" y="623">
+                                            <ACTOR eid="this" id="0"/>
+                                            <get-val-7-4 comment="false" id="1" x="0" y="0"/>
+                                        </setanim>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <getanim comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                        </getanim>
+                                        <get-val-7-6 comment="false" id="1" x="0" y="0"/>
+                                    </eq>
+                                </else-if>
+                            </group>
+                            <get-val-7-1 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else comment="false" x="37" y="679">
+                            <group eventID="2" id="-1">
+                                <setanim comment="false" x="48" y="699">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-7-9 comment="false" id="1" x="0" y="0"/>
+                                </setanim>
+                            </group>
+                        </else>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-7-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+                <else-if comment="false" x="26" y="755">
+                    <group eventID="3" id="-1">
+                        <setanim comment="false" x="37" y="793">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-7-5 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-dxy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-dxy>
+                        <int id="1" val="0"/>
+                    </less>
+                </else-if>
+                <else-if comment="false" x="26" y="837">
+                    <group eventID="3" id="-1">
+                        <setanim comment="false" x="37" y="875">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-7-6 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-dxy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-dxy>
+                        <int id="1" val="0"/>
+                    </more>
+                </else-if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="4">
+        <if comment="false" x="556" y="411">
+            <group eventID="2" id="-1"/>
+            <eq comment="false" id="0" x="0" y="0">
+                <scene-get-attribute comment="false" id="0" x="0" y="0">
+                    <int id="0" val="Game"/>
+                    <int id="1" val="_intro"/>
+                </scene-get-attribute>
+                <int id="1" val="2"/>
+            </eq>
+        </if>
+    </group>
+    <group eventID="2" id="6">
+        <comment-short comment="false" x="620" y="332">
+            <int id="0" val="à l&amp;#039;étape"/>
+        </comment-short>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="3" id="-1">
+                        <scene-set-attribute comment="false" x="37" y="67">
+                            <int id="0" val="Game"/>
+                            <int id="1" val="_tv"/>
+                            <not comment="false" id="2" x="0" y="0">
+                                <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="Game"/>
+                                    <int id="1" val="_tv"/>
+                                </scene-get-attribute>
+                            </not>
+                        </scene-set-attribute>
+                        <scene-say comment="false" x="37" y="97">
+                            <int id="0" val="Game"/>
+                            <int id="1" val="update_collision"/>
+                        </scene-say>
+                    </group>
+                    <get-val-7-1 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <CONTROL eid="4" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="3" id="-1">
+        <get-val-7-10 comment="false" x="236" y="98"/>
+    </group>
+</groups>
