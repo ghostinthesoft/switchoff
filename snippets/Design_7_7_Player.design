@@ -190,7 +190,7 @@
             </group>
         </step>
     </group>
-    <group eventID="2" id="4">
+    <group eventID="2" id="1">
         <if comment="false" x="556" y="411">
             <group eventID="2" id="-1"/>
             <eq comment="false" id="0" x="0" y="0">
@@ -202,40 +202,10 @@
             </eq>
         </if>
     </group>
-    <group eventID="2" id="6">
+    <group eventID="2" id="2">
         <comment-short comment="false" x="620" y="332">
             <int id="0" val="à l&amp;#039;étape"/>
         </comment-short>
     </group>
     <group eventID="2" id="-1"/>
-    <group eventID="3" id="0">
-        <event-key-press-release comment="false" x="15" y="15">
-            <group eventID="1" id="-1">
-                <if comment="false" x="26" y="42">
-                    <group eventID="3" id="-1">
-                        <scene-set-attribute comment="false" x="37" y="67">
-                            <int id="0" val="Game"/>
-                            <int id="1" val="_tv"/>
-                            <not comment="false" id="2" x="0" y="0">
-                                <scene-get-attribute comment="false" id="0" x="0" y="0">
-                                    <int id="0" val="Game"/>
-                                    <int id="1" val="_tv"/>
-                                </scene-get-attribute>
-                            </not>
-                        </scene-set-attribute>
-                        <scene-say comment="false" x="37" y="97">
-                            <int id="0" val="Game"/>
-                            <int id="1" val="update_collision"/>
-                        </scene-say>
-                    </group>
-                    <get-val-7-1 comment="false" id="0" x="0" y="0"/>
-                </if>
-            </group>
-            <CONTROL eid="4" id="0"/>
-            <int id="1" val="0"/>
-        </event-key-press-release>
-    </group>
-    <group eventID="3" id="-1">
-        <get-val-7-10 comment="false" x="236" y="98"/>
-    </group>
 </groups>

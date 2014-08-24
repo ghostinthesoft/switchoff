@@ -8,37 +8,6 @@
         <blocks/>
         <events/>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_8_8_PlayerInput" classname="scripts.Design_8_8_PlayerInput" desc="" description="" design="true" drawOrder="0" id="4" language="" name="Player Input" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <control default="" defaultValue="" desc="" dropdown="" fullname="Right Control" hidden="false" id="34" name="_RightControl" order="7"/>
-        <control default="" defaultValue="" desc="" dropdown="" fullname="Left Control" hidden="false" id="33" name="_LeftControl" order="6"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Move X" hidden="true" id="38" name="_MoveX" order="1"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Move Y" hidden="true" id="39" name="_MoveY" order="2"/>
-        <number default="30.0" defaultValue="30.0" desc="The speed of the movement." dropdown="" fullname="Speed" hidden="false" id="11" name="_Speed" order="8"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="X Idle" hidden="true" id="47" name="_XIdle" order="4"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Prefer X" hidden="true" id="44" name="_PreferX" order="3"/>
-        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Y Idle" hidden="true" id="49" name="_YIdle" order="5"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Left Animation" hidden="false" id="55" name="_LeftAnimation" order="11"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Left Idle" hidden="false" id="54" name="_LeftAnimationIdle" order="10"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Front idle" hidden="false" id="59" name="_Frontidle" order="9"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="57" name="_RightAnimation" order="13"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Right Idle" hidden="false" id="56" name="_RightAnimationIdle" order="12"/>
-        <text default="" defaultValue="" desc="" dropdown="" fullname="sentence" hidden="true" id="61" name="_sentence" order="15"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="talking" hidden="true" id="60" name="_talking" order="14"/>
-        <blocks/>
-        <events>
-            <event displayName="Updated" enabled="true" id="3" name="step" order="3" repeats="true"/>
-        </events>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_5_5_CameraFollowPlayer" classname="scripts.Design_5_5_CameraFollowPlayer" desc="Makes the camera follow this Actor." description="Makes the camera follow this Actor." design="true" drawOrder="0" id="5" language="" name="Camera Follow Player" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <number default="0" defaultValue="0" desc="Horizontal Offset from the Actor" dropdown="" fullname="X Offset" hidden="false" id="1" name="_XOffset" order="1"/>
-        <number default="0.0" defaultValue="0.0" desc="Vertical Offset from the Actor" dropdown="" fullname="Y Offset" hidden="false" id="2" name="_YOffset" order="2"/>
-        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <blocks/>
-        <events>
-            <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
-        </events>
-    </snippet>
     <snippet attachedevent="false" class="scripts.Design_6_6_Game" classname="scripts.Design_6_6_Game" desc="" description="" design="true" drawOrder="0" id="6" language="" name="Game" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
         <actor default="" defaultValue="" desc="" dropdown="" fullname="player" hidden="true" id="1" name="_player" order="6"/>
         <boolean default="true" defaultValue="true" desc="" dropdown="" fullname="tv" hidden="true" id="2" name="_tv" order="7"/>
@@ -63,12 +32,13 @@
         <list default="list" defaultValue="list" desc="" dropdown="" fullname="dialafter" hidden="true" id="25" name="_dialafter" order="25"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="talkafter" hidden="true" id="24" name="_talkafter" order="18"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="wait" hidden="true" id="26" name="_wait" order="21"/>
-        <number default="1" defaultValue="1" desc="" dropdown="" fullname="intro" hidden="true" id="29" name="_intro" order="27"/>
+        <number default="4" defaultValue="4" desc="" dropdown="" fullname="intro" hidden="true" id="29" name="_intro" order="27"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="fade_intro" hidden="true" id="31" name="_fadeintro" order="30"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="fade_counter" hidden="true" id="30" name="_fadecounter" order="29"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="fadetime" hidden="true" id="34" name="_fadetime" order="24"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="ready" hidden="true" id="35" name="_ready" order="28"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="fadein" hidden="true" id="33" name="_fadein" order="23"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="canteleport" hidden="true" id="38" name="_canteleport" order="31"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="in_wall" hidden="true" id="36" name="_inwall" order="14"/>
         <boolean default="true" defaultValue="true" desc="" dropdown="" fullname="in_wall_active" hidden="true" id="37" name="_inwallactive" order="15"/>
         <blocks>
@@ -77,37 +47,38 @@
             <receiver blockID="15" id="3"/>
             <receiver blockID="16" id="4"/>
             <receiver blockID="30" id="5"/>
+            <receiver blockID="31" id="6"/>
         </blocks>
         <events>
-            <event displayName="Every N secs" enabled="true" id="17" name="event-periodic" order="3" repeats="true"/>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Keyboard" enabled="true" id="19" name="event-key-press-release" order="12" repeats="true"/>
-            <event displayName="Custom Event" enabled="true" id="3" name="event-custom" order="13" repeats="true"/>
-            <event displayName="Keyboard" enabled="true" id="4" name="event-key-press-release" order="4" repeats="true"/>
-            <event displayName="Set a new dialog" enabled="true" id="20" name="event-custom-block" order="18" repeats="true"/>
-            <event displayName="Enters Hole" enabled="true" id="5" name="event-actor-region" order="15" repeats="true"/>
-            <event displayName="Drawing" enabled="true" id="8" name="draw" order="25" repeats="true"/>
-            <event displayName="mainloop" enabled="true" id="9" name="step" order="17" repeats="true"/>
-            <event displayName="Exit Hole" enabled="true" id="10" name="event-actor-region" order="16" repeats="true"/>
-            <event displayName="Custom Block" enabled="true" id="14" name="event-custom-block" order="22" repeats="true"/>
-            <event displayName="Keyboard" enabled="true" id="15" name="event-key-press-release" order="10" repeats="true"/>
+            <event displayName="Custom Event" enabled="true" id="3" name="event-custom" order="14" repeats="true"/>
+            <event displayName="Reload" enabled="true" id="4" name="event-key-press-release" order="4" repeats="true"/>
+            <event displayName="Enters Hole" enabled="true" id="5" name="event-actor-region" order="16" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="8" name="draw" order="27" repeats="true"/>
+            <event displayName="mainloop" enabled="true" id="9" name="step" order="18" repeats="true"/>
+            <event displayName="Exit Hole" enabled="true" id="10" name="event-actor-region" order="17" repeats="true"/>
+            <event displayName="Dialog block" enabled="true" id="14" name="event-custom-block" order="26" repeats="true"/>
+            <event displayName="Skip Dialog" enabled="true" id="15" name="event-key-press-release" order="10" repeats="true"/>
+            <event displayName="Every N secs" enabled="true" id="17" name="event-periodic" order="3" repeats="true"/>
+            <event displayName="Interactions" enabled="true" id="19" name="event-key-press-release" order="12" repeats="true"/>
+            <event displayName="Teleport" enabled="true" id="21" name="event-key-press-release" order="13" repeats="false"/>
+            <event displayName="Set a new dialog" enabled="true" id="20" name="event-custom-block" order="23" repeats="true"/>
+            <event displayName="Stop dialog" enabled="true" id="22" name="event-custom-block" order="19" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_7_7_Player" classname="scripts.Design_7_7_Player" desc="" description="" design="true" drawOrder="0" id="7" language="" name="Player" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="active" hidden="true" id="1" name="_active" order="1"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Move X" hidden="true" id="2" name="_MoveX" order="2"/>
-        <number default="30.0" defaultValue="30.0" desc="The speed of the movement." dropdown="" fullname="Speed" hidden="false" id="3" name="_Speed" order="3"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Front idle" hidden="false" id="4" name="_Frontidle" order="4"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Left Animation" hidden="false" id="5" name="_LeftAnimation" order="6"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="6" name="_RightAnimation" order="7"/>
-        <animation default="" defaultValue="" desc="" dropdown="" fullname="Right Idle" hidden="false" id="9" name="_RightIdle" order="5"/>
-        <boolean default="true" defaultValue="true" desc="" dropdown="" fullname="tv" hidden="true" id="10" name="_tv" order="8"/>
-        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="active" hidden="true" id="1" name="_active" order="6"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Move X" hidden="true" id="2" name="_MoveX" order="7"/>
+        <number default="30.0" defaultValue="30.0" desc="The speed of the movement." dropdown="" fullname="Speed" hidden="false" id="3" name="_Speed" order="0"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Front idle" hidden="false" id="4" name="_Frontidle" order="1"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Left Animation" hidden="false" id="5" name="_LeftAnimation" order="3"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Right Animation" hidden="false" id="6" name="_RightAnimation" order="4"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Right Idle" hidden="false" id="9" name="_RightIdle" order="2"/>
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="5"/>
         <blocks/>
         <events>
             <event displayName="Custom Event" enabled="true" id="1" name="event-custom" order="1" repeats="true"/>
             <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
-            <event displayName="Keyboard" enabled="true" id="3" name="event-key-press-release" order="3" repeats="false"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_10" classname="scripts.ActorEvents_10" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="8" language="" name="ActorEvents_10" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">

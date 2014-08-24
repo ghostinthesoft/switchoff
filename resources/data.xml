@@ -40,7 +40,7 @@
                 <prop id="7" list="0" val="0.0"/>
                 <prop id="8" list="0" val="0.0"/>
                 <prop id="9" list="0" val="idler"/>
-                <prop id="10" list="0" val="left"/>
+                <prop id="10" list="0" val="false"/>
                 <prop id="11" list="0" val="right"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
@@ -98,6 +98,7 @@
         <blank name="Y" order="1" type="NUMBER"/>
         <blank name="Time" order="2" type="NUMBER"/>
     </custom-block>
+    <custom-block blocktag="custom-31" blocktype="ACTION" code="sayToScene(&quot;Game&quot;, &quot;StopDialog&quot;);" desc="" global="false" gui="Stop dialog" id="31" message="StopDialog" name="StopDialog" oid="-1" return="VOID" shared="false" snippetID="6"/>
     <tileset across="8" atlasID="0" desc="" down="7" id="6" name="tiles" oid="-1" shared="false" th="16" tw="16">
         <tile collision="1" data="" durations="100" frames="0" id="0" order="-1"/>
         <tile collision="1" data="" durations="100" frames="1" id="1" order="-1"/>
