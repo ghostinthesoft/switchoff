@@ -3,25 +3,19 @@
     <group eventID="1" id="0">
         <init comment="false" x="15" y="21">
             <group eventID="1" id="-1">
-                <set-val-6-10 comment="false" x="26" y="46">
-                    <int id="0" val="press space to start"/>
-                </set-val-6-10>
-                <set-val-6-20 comment="false" x="26" y="66">
-                    <int id="0" val="3"/>
-                </set-val-6-20>
-                <set-val-6-19 comment="false" x="26" y="86">
+                <set-val-6-19 comment="false" x="26" y="46">
                     <create-list comment="false" id="0" x="0" y="0"/>
                 </set-val-6-19>
-                <set-val-6-22 comment="false" x="26" y="111">
+                <set-val-6-22 comment="false" x="26" y="71">
                     <create-list comment="false" id="0" x="0" y="0"/>
                 </set-val-6-22>
-                <set-val-6-23 comment="false" x="26" y="136">
+                <set-val-6-23 comment="false" x="26" y="96">
                     <create-list comment="false" id="0" x="0" y="0"/>
                 </set-val-6-23>
-                <set-val-6-25 comment="false" x="26" y="161">
+                <set-val-6-25 comment="false" x="26" y="121">
                     <create-list comment="false" id="0" x="0" y="0"/>
                 </set-val-6-25>
-                <create-actor3 comment="false" x="26" y="186">
+                <create-actor3 comment="false" x="26" y="146">
                     <ACTORTYPE eid="1" id="0"/>
                     <minus comment="false" id="1" x="0" y="0">
                         <times comment="false" id="0" x="0" y="0">
@@ -40,7 +34,7 @@
                     </minus>
                     <int id="3" val="0"/>
                 </create-actor3>
-                <camera-move comment="false" x="26" y="236">
+                <camera-move comment="false" x="26" y="196">
                     <times comment="false" id="0" x="0" y="0">
                         <int id="0" val="0.5"/>
                         <scene-wh comment="false" id="1" x="0" y="0">
@@ -54,25 +48,14 @@
                         </scene-wh>
                     </times>
                 </camera-move>
-                <set-val-6-1 comment="false" x="26" y="274">
+                <set-val-6-1 comment="false" x="26" y="234">
                     <ACTOR eid="lastcreated" id="0"/>
                 </set-val-6-1>
-                <say-this comment="false" x="26" y="301">
+                <say-this comment="false" x="26" y="261">
                     <int id="0" val="update_collision"/>
                 </say-this>
             </group>
         </init>
-    </group>
-    <group eventID="1" id="1">
-        <comment-short comment="false" x="159" y="454">
-            <int id="0" val="fondu au démarrage"/>
-        </comment-short>
-        <set-val-6-34 comment="false" x="159" y="474">
-            <int id="0" val="2"/>
-        </set-val-6-34>
-        <set-val-6-33 comment="false" x="159" y="494">
-            <get-val-6-34 comment="false" id="0" x="0" y="0"/>
-        </set-val-6-33>
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="3" id="0">
@@ -91,8 +74,8 @@
                                         <int id="0" val="33"/>
                                         <loopindex comment="false" id="1" x="0" y="0"/>
                                     </plus>
-                                    <get-val-6-4 comment="false" id="2" x="0" y="0"/>
-                                    <get-val-6-5 comment="false" id="3" x="0" y="0"/>
+                                    <get-game-val-1 comment="false" id="2" x="0" y="0"/>
+                                    <get-game-val-0 comment="false" id="3" x="0" y="0"/>
                                     <int id="4" val="1"/>
                                 </set-tile-at>
                             </group>
@@ -106,12 +89,12 @@
                                         <int id="0" val="33"/>
                                         <loopindex comment="false" id="1" x="0" y="0"/>
                                     </plus>
-                                    <get-val-6-4 comment="false" id="2" x="0" y="0"/>
+                                    <get-game-val-1 comment="false" id="2" x="0" y="0"/>
                                 </remove-tile-at>
                             </group>
                         </else>
                     </group>
-                    <int id="0" val="19"/>
+                    <int id="0" val="18"/>
                 </repeat>
                 <comment-short comment="false" x="26" y="226">
                     <int id="0" val="tv - limites du trou"/>
@@ -122,67 +105,247 @@
                             <group eventID="3" id="-1">
                                 <set-tile-at comment="false" x="48" y="296">
                                     <plus comment="false" id="0" x="0" y="0">
-                                        <int id="0" val="35"/>
+                                        <int id="0" val="34"/>
                                         <loopindex comment="false" id="1" x="0" y="0"/>
                                     </plus>
                                     <int id="1" val="51"/>
-                                    <get-val-6-4 comment="false" id="2" x="0" y="0"/>
-                                    <get-val-6-5 comment="false" id="3" x="0" y="0"/>
-                                    <int id="4" val="1"/>
-                                </set-tile-at>
-                                <set-tile-at comment="false" x="48" y="326">
-                                    <plus comment="false" id="0" x="0" y="0">
-                                        <int id="0" val="35"/>
-                                        <loopindex comment="false" id="1" x="0" y="0"/>
-                                    </plus>
-                                    <int id="1" val="56"/>
-                                    <get-val-6-4 comment="false" id="2" x="0" y="0"/>
-                                    <get-val-6-5 comment="false" id="3" x="0" y="0"/>
+                                    <get-game-val-1 comment="false" id="2" x="0" y="0"/>
+                                    <get-game-val-0 comment="false" id="3" x="0" y="0"/>
                                     <int id="4" val="1"/>
                                 </set-tile-at>
                             </group>
                             <get-val-6-2 comment="false" id="0" x="0" y="0"/>
                         </if>
-                        <else comment="false" x="37" y="368">
+                        <else comment="false" x="37" y="338">
                             <group eventID="3" id="-1">
-                                <remove-tile-at comment="false" x="48" y="388">
+                                <remove-tile-at comment="false" x="48" y="358">
                                     <plus comment="false" id="0" x="0" y="0">
-                                        <int id="0" val="35"/>
+                                        <int id="0" val="34"/>
                                         <loopindex comment="false" id="1" x="0" y="0"/>
                                     </plus>
                                     <int id="1" val="51"/>
-                                    <get-val-6-4 comment="false" id="2" x="0" y="0"/>
+                                    <get-game-val-1 comment="false" id="2" x="0" y="0"/>
                                 </remove-tile-at>
-                                <remove-tile-at comment="false" x="48" y="418">
+                            </group>
+                        </else>
+                    </group>
+                    <int id="0" val="5"/>
+                </repeat>
+                <if comment="false" x="26" y="412">
+                    <group eventID="3" id="-1">
+                        <repeat comment="false" x="37" y="437">
+                            <group eventID="3" id="-1">
+                                <if comment="false" x="48" y="462">
+                                    <group eventID="3" id="-1">
+                                        <set-tile-at comment="false" x="59" y="487">
+                                            <plus comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="29"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <int id="1" val="56"/>
+                                            <get-game-val-1 comment="false" id="2" x="0" y="0"/>
+                                            <get-game-val-0 comment="false" id="3" x="0" y="0"/>
+                                            <int id="4" val="1"/>
+                                        </set-tile-at>
+                                    </group>
+                                    <get-val-6-2 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                                <else comment="false" x="48" y="529">
+                                    <group eventID="3" id="-1">
+                                        <remove-tile-at comment="false" x="59" y="549">
+                                            <plus comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="29"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <int id="1" val="56"/>
+                                            <get-game-val-1 comment="false" id="2" x="0" y="0"/>
+                                        </remove-tile-at>
+                                    </group>
+                                </else>
+                            </group>
+                            <int id="0" val="10"/>
+                        </repeat>
+                    </group>
+                    <get-val-6-17 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else comment="false" x="26" y="615">
+                    <group eventID="3" id="-1">
+                        <repeat comment="false" x="37" y="635">
+                            <group eventID="3" id="-1">
+                                <if comment="false" x="48" y="660">
+                                    <group eventID="3" id="-1">
+                                        <set-tile-at comment="false" x="59" y="685">
+                                            <plus comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="35"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <int id="1" val="56"/>
+                                            <get-game-val-1 comment="false" id="2" x="0" y="0"/>
+                                            <get-game-val-0 comment="false" id="3" x="0" y="0"/>
+                                            <int id="4" val="1"/>
+                                        </set-tile-at>
+                                    </group>
+                                    <get-val-6-2 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                                <else comment="false" x="48" y="727">
+                                    <group eventID="3" id="-1">
+                                        <remove-tile-at comment="false" x="59" y="747">
+                                            <plus comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="35"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <int id="1" val="56"/>
+                                            <get-game-val-1 comment="false" id="2" x="0" y="0"/>
+                                        </remove-tile-at>
+                                    </group>
+                                </else>
+                            </group>
+                            <int id="0" val="4"/>
+                        </repeat>
+                    </group>
+                </else>
+                <comment-short comment="false" x="26" y="813">
+                    <int id="0" val="real - mur"/>
+                </comment-short>
+                <repeat comment="false" x="26" y="833">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="858">
+                            <group eventID="3" id="-1">
+                                <remove-tile-at comment="false" x="48" y="883">
                                     <plus comment="false" id="0" x="0" y="0">
-                                        <int id="0" val="35"/>
+                                        <int id="0" val="30"/>
                                         <loopindex comment="false" id="1" x="0" y="0"/>
                                     </plus>
-                                    <int id="1" val="56"/>
-                                    <get-val-6-4 comment="false" id="2" x="0" y="0"/>
+                                    <int id="1" val="9"/>
+                                    <get-game-val-1 comment="false" id="2" x="0" y="0"/>
                                 </remove-tile-at>
+                                <remove-tile-at comment="false" x="48" y="913">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="30"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </plus>
+                                    <int id="1" val="11"/>
+                                    <get-game-val-1 comment="false" id="2" x="0" y="0"/>
+                                </remove-tile-at>
+                            </group>
+                            <get-val-6-2 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else comment="false" x="37" y="955">
+                            <group eventID="3" id="-1">
+                                <set-tile-at comment="false" x="48" y="975">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="30"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </plus>
+                                    <int id="1" val="9"/>
+                                    <get-game-val-1 comment="false" id="2" x="0" y="0"/>
+                                    <get-game-val-0 comment="false" id="3" x="0" y="0"/>
+                                    <int id="4" val="1"/>
+                                </set-tile-at>
+                                <set-tile-at comment="false" x="48" y="1005">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="30"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </plus>
+                                    <int id="1" val="11"/>
+                                    <get-game-val-1 comment="false" id="2" x="0" y="0"/>
+                                    <get-game-val-0 comment="false" id="3" x="0" y="0"/>
+                                    <int id="4" val="1"/>
+                                </set-tile-at>
                             </group>
                         </else>
                     </group>
                     <int id="0" val="4"/>
                 </repeat>
-                <comment-short comment="false" x="26" y="472">
+                <comment-short comment="false" x="26" y="1059">
+                    <int id="0" val="tv - mur de l&amp;#039;étage 2"/>
+                </comment-short>
+                <repeat comment="false" x="26" y="1079">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="1104">
+                            <group eventID="3" id="-1">
+                                <set-tile-at comment="false" x="48" y="1129">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </plus>
+                                    <int id="1" val="21"/>
+                                    <get-game-val-1 comment="false" id="2" x="0" y="0"/>
+                                    <get-game-val-0 comment="false" id="3" x="0" y="0"/>
+                                    <int id="4" val="1"/>
+                                </set-tile-at>
+                            </group>
+                            <get-val-6-2 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else comment="false" x="37" y="1171">
+                            <group eventID="3" id="-1">
+                                <remove-tile-at comment="false" x="48" y="1191">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </plus>
+                                    <int id="1" val="21"/>
+                                    <get-game-val-1 comment="false" id="2" x="0" y="0"/>
+                                </remove-tile-at>
+                            </group>
+                        </else>
+                    </group>
+                    <int id="0" val="28"/>
+                </repeat>
+                <comment-short comment="false" x="26" y="1245">
+                    <int id="0" val="real - mur du dernier étage"/>
+                </comment-short>
+                <repeat comment="false" x="26" y="1265">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="1290">
+                            <group eventID="3" id="-1">
+                                <set-tile-at comment="false" x="48" y="1320">
+                                    <int id="0" val="19"/>
+                                    <plus comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </plus>
+                                    <get-game-val-1 comment="false" id="2" x="0" y="0"/>
+                                    <get-game-val-0 comment="false" id="3" x="0" y="0"/>
+                                    <int id="4" val="1"/>
+                                </set-tile-at>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <get-val-6-2 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </if>
+                        <else comment="false" x="37" y="1362">
+                            <group eventID="3" id="-1">
+                                <remove-tile-at comment="false" x="48" y="1382">
+                                    <int id="0" val="19"/>
+                                    <plus comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </plus>
+                                    <get-game-val-1 comment="false" id="2" x="0" y="0"/>
+                                </remove-tile-at>
+                            </group>
+                        </else>
+                    </group>
+                    <int id="0" val="88"/>
+                </repeat>
+                <comment-short comment="false" x="26" y="1436">
                     <int id="0" val="on met le perso sur le bon layer"/>
                 </comment-short>
-                <if comment="false" x="26" y="492">
+                <if comment="false" x="26" y="1456">
                     <group eventID="2" id="-1">
-                        <setlayer comment="false" x="37" y="517">
+                        <setlayer comment="false" x="37" y="1481">
                             <ACTOR eid="var" id="0" vid="1"/>
-                            <get-val-6-6 comment="false" id="1" x="0" y="0"/>
+                            <get-game-val-2 comment="false" id="1" x="0" y="0"/>
                         </setlayer>
                     </group>
                     <get-val-6-2 comment="false" id="0" x="0" y="0"/>
                 </if>
-                <else comment="false" x="26" y="561">
+                <else comment="false" x="26" y="1525">
                     <group eventID="2" id="-1">
-                        <setlayer comment="false" x="37" y="581">
+                        <setlayer comment="false" x="37" y="1545">
                             <ACTOR eid="var" id="0" vid="1"/>
-                            <get-val-6-7 comment="false" id="1" x="0" y="0"/>
+                            <get-game-val-3 comment="false" id="1" x="0" y="0"/>
                         </setlayer>
                     </group>
                 </else>
@@ -207,24 +370,17 @@
     <group eventID="5" id="0">
         <event-actor-region comment="false" x="15" y="15">
             <group eventID="5" id="-1">
-                <print comment="false" x="26" y="42">
-                    <int id="0" val="enter hole"/>
-                </print>
-                <set-val-6-15 comment="false" x="26" y="62">
+                <set-val-6-15 comment="false" x="26" y="42">
                     <true comment="false" id="0" x="0" y="0"/>
                 </set-val-6-15>
+                <custom-31 comment="false" x="26" y="67"/>
             </group>
             <int id="0" val="0"/>
             <REGION eid="var" id="1" vid="12"/>
             <ACTOR eid="var" id="2" vid="1"/>
         </event-actor-region>
     </group>
-    <group eventID="5" id="-1">
-        <and comment="false" x="242" y="323">
-            <get-val-6-17 comment="false" id="0" x="0" y="0"/>
-            <int id="1" val=""/>
-        </and>
-    </group>
+    <group eventID="5" id="-1"/>
     <group eventID="8" id="0">
         <draw comment="false" x="25" y="35">
             <group eventID="8" id="-1">
@@ -280,12 +436,18 @@
                 </comment-short>
                 <if comment="false" x="36" y="294">
                     <group eventID="8" id="-1">
-                        <if comment="false" x="47" y="329">
+                        <if comment="false" x="47" y="324">
                             <group eventID="8" id="-1">
-                                <set-font-new comment="false" x="58" y="359">
+                                <set-font-new comment="false" x="58" y="354">
                                     <FONT eid="8" id="0"/>
                                 </set-font-new>
-                                <set-val-6-13 comment="false" x="58" y="386">
+                                <set-val-6-3 comment="false" x="58" y="381">
+                                    <get-font-width2-new comment="false" id="0" x="0" y="0">
+                                        <FONT eid="8" id="0"/>
+                                        <get-val-6-10 comment="false" id="1" x="0" y="0"/>
+                                    </get-font-width2-new>
+                                </set-val-6-3>
+                                <set-val-6-13 comment="false" x="58" y="419">
                                     <minus comment="false" id="0" x="0" y="0">
                                         <minus comment="false" id="0" x="0" y="0">
                                             <get-xy comment="false" id="0" x="0" y="0">
@@ -298,14 +460,11 @@
                                         </minus>
                                         <times comment="false" id="1" x="0" y="0">
                                             <int id="0" val="0.5"/>
-                                            <get-font-width2-new comment="false" id="1" x="0" y="0">
-                                                <FONT eid="8" id="0"/>
-                                                <get-val-6-10 comment="false" id="1" x="0" y="0"/>
-                                            </get-font-width2-new>
+                                            <get-val-6-3 comment="false" id="1" x="0" y="0"/>
                                         </times>
                                     </minus>
                                 </set-val-6-13>
-                                <set-val-6-14 comment="false" x="58" y="434">
+                                <set-val-6-14 comment="false" x="58" y="462">
                                     <minus comment="false" id="0" x="0" y="0">
                                         <minus comment="false" id="0" x="0" y="0">
                                             <get-xy comment="false" id="0" x="0" y="0">
@@ -319,94 +478,117 @@
                                         <int id="1" val="24"/>
                                     </minus>
                                 </set-val-6-14>
+                                <if comment="false" x="58" y="505">
+                                    <group eventID="8" id="-1">
+                                        <set-val-6-13 comment="false" x="69" y="548">
+                                            <minus comment="false" id="0" x="0" y="0">
+                                                <minus comment="false" id="0" x="0" y="0">
+                                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                                        <int id="0" val="0"/>
+                                                    </screen-wh>
+                                                    <get-val-6-3 comment="false" id="1" x="0" y="0"/>
+                                                </minus>
+                                                <int id="1" val="16"/>
+                                            </minus>
+                                        </set-val-6-13>
+                                    </group>
+                                    <more comment="false" id="0" x="0" y="0">
+                                        <plus comment="false" id="0" x="0" y="0">
+                                            <get-val-6-13 comment="false" id="0" x="0" y="0"/>
+                                            <get-val-6-3 comment="false" id="1" x="0" y="0"/>
+                                        </plus>
+                                        <minus comment="false" id="1" x="0" y="0">
+                                            <screen-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                            </screen-wh>
+                                            <int id="1" val="16"/>
+                                        </minus>
+                                    </more>
+                                </if>
+                                <if comment="false" x="58" y="603">
+                                    <group eventID="8" id="-1">
+                                        <set-val-6-13 comment="false" x="69" y="633">
+                                            <int id="0" val="16"/>
+                                        </set-val-6-13>
+                                    </group>
+                                    <less comment="false" id="0" x="0" y="0">
+                                        <get-val-6-13 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="16"/>
+                                    </less>
+                                </if>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
                                 <get-val-6-20 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="1"/>
                             </eq>
                         </if>
-                        <else-if comment="false" x="47" y="489">
+                        <else-if comment="false" x="47" y="677">
                             <group eventID="8" id="-1">
-                                <set-font-new comment="false" x="58" y="519">
+                                <set-font-new comment="false" x="58" y="707">
                                     <FONT eid="9" id="0"/>
                                 </set-font-new>
-                                <set-val-6-3 comment="false" x="58" y="546">
+                                <set-val-6-3 comment="false" x="58" y="734">
                                     <get-font-width2-new comment="false" id="0" x="0" y="0">
                                         <FONT eid="9" id="0"/>
                                         <get-val-6-10 comment="false" id="1" x="0" y="0"/>
                                     </get-font-width2-new>
                                 </set-val-6-3>
-                                <if comment="false" x="58" y="584">
+                                <set-val-6-13 comment="false" x="58" y="772">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <minus comment="false" id="0" x="0" y="0">
+                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="var" id="0" vid="18"/>
+                                                <int id="1" val="2"/>
+                                            </get-xy>
+                                            <screen-xy comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                            </screen-xy>
+                                        </minus>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="0.5"/>
+                                            <get-val-6-3 comment="false" id="1" x="0" y="0"/>
+                                        </times>
+                                    </minus>
+                                </set-val-6-13>
+                                <if comment="false" x="58" y="815">
                                     <group eventID="8" id="-1">
-                                        <set-val-6-13 comment="false" x="69" y="614">
+                                        <set-val-6-13 comment="false" x="69" y="858">
                                             <minus comment="false" id="0" x="0" y="0">
                                                 <minus comment="false" id="0" x="0" y="0">
-                                                    <get-xy comment="false" id="0" x="0" y="0">
-                                                        <ACTOR eid="var" id="0" vid="18"/>
-                                                        <int id="1" val="2"/>
-                                                    </get-xy>
-                                                    <screen-xy comment="false" id="1" x="0" y="0">
-                                                        <int id="0" val="0"/>
-                                                    </screen-xy>
-                                                </minus>
-                                                <times comment="false" id="1" x="0" y="0">
-                                                    <int id="0" val="0.5"/>
-                                                    <get-val-6-3 comment="false" id="1" x="0" y="0"/>
-                                                </times>
-                                            </minus>
-                                        </set-val-6-13>
-                                        <if comment="false" x="69" y="657">
-                                            <group eventID="8" id="-1">
-                                                <set-val-6-13 comment="false" x="80" y="700">
-                                                    <minus comment="false" id="0" x="0" y="0">
-                                                        <minus comment="false" id="0" x="0" y="0">
-                                                            <screen-wh comment="false" id="0" x="0" y="0">
-                                                                <int id="0" val="0"/>
-                                                            </screen-wh>
-                                                            <get-val-6-3 comment="false" id="1" x="0" y="0"/>
-                                                        </minus>
-                                                        <int id="1" val="16"/>
-                                                    </minus>
-                                                </set-val-6-13>
-                                            </group>
-                                            <more comment="false" id="0" x="0" y="0">
-                                                <plus comment="false" id="0" x="0" y="0">
-                                                    <get-val-6-13 comment="false" id="0" x="0" y="0"/>
-                                                    <get-val-6-3 comment="false" id="1" x="0" y="0"/>
-                                                </plus>
-                                                <minus comment="false" id="1" x="0" y="0">
                                                     <screen-wh comment="false" id="0" x="0" y="0">
                                                         <int id="0" val="0"/>
                                                     </screen-wh>
-                                                    <int id="1" val="16"/>
-                                                </minus>
-                                            </more>
-                                        </if>
-                                    </group>
-                                    <more comment="false" id="0" x="0" y="0">
-                                        <get-val-6-29 comment="false" id="0" x="0" y="0"/>
-                                        <int id="1" val="0"/>
-                                    </more>
-                                </if>
-                                <else comment="false" x="58" y="767">
-                                    <group eventID="8" id="-1">
-                                        <set-val-6-13 comment="false" x="69" y="787">
-                                            <minus comment="false" id="0" x="0" y="0">
-                                                <times comment="false" id="0" x="0" y="0">
-                                                    <int id="0" val="0.5"/>
-                                                    <screen-wh comment="false" id="1" x="0" y="0">
-                                                        <int id="0" val="0"/>
-                                                    </screen-wh>
-                                                </times>
-                                                <times comment="false" id="1" x="0" y="0">
-                                                    <int id="0" val="0.5"/>
                                                     <get-val-6-3 comment="false" id="1" x="0" y="0"/>
-                                                </times>
+                                                </minus>
+                                                <int id="1" val="16"/>
                                             </minus>
                                         </set-val-6-13>
                                     </group>
-                                </else>
-                                <set-val-6-14 comment="false" x="58" y="842">
+                                    <more comment="false" id="0" x="0" y="0">
+                                        <plus comment="false" id="0" x="0" y="0">
+                                            <get-val-6-13 comment="false" id="0" x="0" y="0"/>
+                                            <get-val-6-3 comment="false" id="1" x="0" y="0"/>
+                                        </plus>
+                                        <minus comment="false" id="1" x="0" y="0">
+                                            <screen-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                            </screen-wh>
+                                            <int id="1" val="16"/>
+                                        </minus>
+                                    </more>
+                                </if>
+                                <if comment="false" x="58" y="913">
+                                    <group eventID="8" id="-1">
+                                        <set-val-6-13 comment="false" x="69" y="943">
+                                            <int id="0" val="16"/>
+                                        </set-val-6-13>
+                                    </group>
+                                    <less comment="false" id="0" x="0" y="0">
+                                        <get-val-6-13 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="16"/>
+                                    </less>
+                                </if>
+                                <set-val-6-14 comment="false" x="58" y="975">
                                     <int id="0" val="128"/>
                                 </set-val-6-14>
                             </group>
@@ -415,12 +597,12 @@
                                 <int id="1" val="2"/>
                             </eq>
                         </else-if>
-                        <else comment="false" x="47" y="874">
+                        <else-if comment="false" x="47" y="1007">
                             <group eventID="8" id="-1">
-                                <set-font-new comment="false" x="58" y="894">
+                                <set-font-new comment="false" x="58" y="1037">
                                     <FONT eid="17" id="0"/>
                                 </set-font-new>
-                                <set-val-6-13 comment="false" x="58" y="921">
+                                <set-val-6-13 comment="false" x="58" y="1064">
                                     <minus comment="false" id="0" x="0" y="0">
                                         <times comment="false" id="0" x="0" y="0">
                                             <int id="0" val="0.5"/>
@@ -437,74 +619,122 @@
                                         </times>
                                     </minus>
                                 </set-val-6-13>
-                                <set-val-6-14 comment="false" x="58" y="969">
-                                    <minus comment="false" id="0" x="0" y="0">
-                                        <screen-wh comment="false" id="0" x="0" y="0">
-                                            <int id="0" val="1"/>
-                                        </screen-wh>
-                                        <int id="1" val="64"/>
-                                    </minus>
+                                <set-val-6-14 comment="false" x="58" y="1112">
+                                    <int id="0" val="32"/>
                                 </set-val-6-14>
                             </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-6-20 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="3"/>
+                            </eq>
+                        </else-if>
+                        <else comment="false" x="47" y="1144">
+                            <group eventID="8" id="-1">
+                                <set-font-new comment="false" x="58" y="1164">
+                                    <FONT eid="32" id="0"/>
+                                </set-font-new>
+                                <set-val-6-3 comment="false" x="58" y="1191">
+                                    <get-font-width2-new comment="false" id="0" x="0" y="0">
+                                        <FONT eid="8" id="0"/>
+                                        <get-val-6-10 comment="false" id="1" x="0" y="0"/>
+                                    </get-font-width2-new>
+                                </set-val-6-3>
+                                <set-val-6-13 comment="false" x="58" y="1229">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <minus comment="false" id="0" x="0" y="0">
+                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="var" id="0" vid="1"/>
+                                                <int id="1" val="2"/>
+                                            </get-xy>
+                                            <screen-xy comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                            </screen-xy>
+                                        </minus>
+                                        <times comment="false" id="1" x="0" y="0">
+                                            <int id="0" val="0.5"/>
+                                            <get-val-6-3 comment="false" id="1" x="0" y="0"/>
+                                        </times>
+                                    </minus>
+                                </set-val-6-13>
+                                <set-val-6-14 comment="false" x="58" y="1272">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <minus comment="false" id="0" x="0" y="0">
+                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="var" id="0" vid="1"/>
+                                                <int id="1" val="1"/>
+                                            </get-xy>
+                                            <screen-xy comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="1"/>
+                                            </screen-xy>
+                                        </minus>
+                                        <int id="1" val="24"/>
+                                    </minus>
+                                </set-val-6-14>
+                                <if comment="false" x="58" y="1315">
+                                    <group eventID="8" id="-1">
+                                        <set-val-6-13 comment="false" x="69" y="1358">
+                                            <minus comment="false" id="0" x="0" y="0">
+                                                <minus comment="false" id="0" x="0" y="0">
+                                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                                        <int id="0" val="0"/>
+                                                    </screen-wh>
+                                                    <get-val-6-3 comment="false" id="1" x="0" y="0"/>
+                                                </minus>
+                                                <int id="1" val="16"/>
+                                            </minus>
+                                        </set-val-6-13>
+                                    </group>
+                                    <more comment="false" id="0" x="0" y="0">
+                                        <plus comment="false" id="0" x="0" y="0">
+                                            <get-val-6-13 comment="false" id="0" x="0" y="0"/>
+                                            <get-val-6-3 comment="false" id="1" x="0" y="0"/>
+                                        </plus>
+                                        <minus comment="false" id="1" x="0" y="0">
+                                            <screen-wh comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                            </screen-wh>
+                                            <int id="1" val="16"/>
+                                        </minus>
+                                    </more>
+                                </if>
+                                <if comment="false" x="58" y="1413">
+                                    <group eventID="8" id="-1">
+                                        <set-val-6-13 comment="false" x="69" y="1443">
+                                            <int id="0" val="16"/>
+                                        </set-val-6-13>
+                                    </group>
+                                    <less comment="false" id="0" x="0" y="0">
+                                        <get-val-6-13 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="16"/>
+                                    </less>
+                                </if>
+                            </group>
                         </else>
-                        <set-alpha comment="false" x="47" y="1019">
+                        <set-alpha comment="false" x="47" y="1487">
                             <int id="0" val="100"/>
                         </set-alpha>
-                        <draw-text comment="false" x="47" y="1039">
+                        <draw-text comment="false" x="47" y="1507">
                             <get-val-6-10 comment="false" id="0" x="0" y="0"/>
                             <get-val-6-13 comment="false" id="1" x="0" y="0"/>
                             <get-val-6-14 comment="false" id="2" x="0" y="0"/>
                         </draw-text>
                     </group>
-                    <or comment="false" id="0" x="0" y="0">
-                        <eq comment="false" id="0" x="0" y="0">
-                            <get-val-6-11 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="2"/>
-                        </eq>
-                        <is-paused comment="false" id="1" x="0" y="0"/>
-                    </or>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-6-11 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="2"/>
+                    </eq>
                 </if>
             </group>
         </draw>
     </group>
-    <group eventID="8" id="6">
-        <comment-short comment="false" x="813" y="567">
-            <int id="0" val="fondu"/>
-        </comment-short>
-        <if comment="false" x="813" y="587">
-            <group eventID="8" id="-1">
-                <to-screen-space comment="false" x="824" y="617"/>
-                <set-color comment="false" x="824" y="637">
-                    <color b="0" g="0" id="0" r="0"/>
-                </set-color>
-                <set-alpha comment="false" x="824" y="664">
-                    <div comment="false" id="0" x="0" y="0">
-                        <times comment="false" id="0" x="0" y="0">
-                            <int id="0" val="100"/>
-                            <get-val-6-33 comment="false" id="1" x="0" y="0"/>
-                        </times>
-                        <get-val-6-34 comment="false" id="1" x="0" y="0"/>
-                    </div>
-                </set-alpha>
-                <drawfill-rect comment="false" x="824" y="699">
-                    <int id="0" val="1"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val="0"/>
-                    <screen-wh comment="false" id="3" x="0" y="0">
-                        <int id="0" val="0"/>
-                    </screen-wh>
-                    <screen-wh comment="false" id="4" x="0" y="0">
-                        <int id="0" val="1"/>
-                    </screen-wh>
-                </drawfill-rect>
-            </group>
-            <more comment="false" id="0" x="0" y="0">
-                <get-val-6-34 comment="false" id="0" x="0" y="0"/>
-                <int id="1" val="0"/>
-            </more>
-        </if>
+    <group eventID="8" id="-1">
+        <minus comment="false" x="772" y="883">
+            <screen-wh comment="false" id="0" x="0" y="0">
+                <int id="0" val="1"/>
+            </screen-wh>
+            <int id="1" val="64"/>
+        </minus>
     </group>
-    <group eventID="8" id="-1"/>
     <group eventID="9" id="0">
         <step comment="false" x="23" y="43">
             <group eventID="9" id="-1">
@@ -671,6 +901,104 @@
                         </lesseq>
                     </and>
                 </if>
+                <if comment="false" x="34" y="945">
+                    <group eventID="19" id="-1">
+                        <comment-short comment="false" x="45" y="970">
+                            <int id="0" val="interaction en cours, elle doit se terminer avant de pouvoir faire quelque chose"/>
+                        </comment-short>
+                        <if comment="false" x="45" y="990">
+                            <group eventID="19" id="-1">
+                                <if comment="false" x="56" y="1015">
+                                    <group eventID="19" id="-1">
+                                        <set-dxy comment="false" x="67" y="1053">
+                                            <ACTOR eid="var" id="0" vid="1"/>
+                                            <int id="1" val="1"/>
+                                            <int id="2" val="-10"/>
+                                        </set-dxy>
+                                    </group>
+                                    <more comment="false" id="0" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="1"/>
+                                            <int id="1" val="1"/>
+                                        </get-xy>
+                                        <int id="1" val="380"/>
+                                    </more>
+                                </if>
+                                <else comment="false" x="56" y="1092">
+                                    <group eventID="19" id="-1">
+                                        <set-val-6-43 comment="false" x="67" y="1112">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-6-43>
+                                    </group>
+                                </else>
+                            </group>
+                            <get-val-6-44 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <if comment="false" x="45" y="1161">
+                            <group eventID="19" id="-1">
+                                <if comment="false" x="56" y="1186">
+                                    <group eventID="19" id="-1">
+                                        <set-dxy comment="false" x="67" y="1224">
+                                            <ACTOR eid="var" id="0" vid="1"/>
+                                            <int id="1" val="1"/>
+                                            <int id="2" val="10"/>
+                                        </set-dxy>
+                                    </group>
+                                    <less comment="false" id="0" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="1"/>
+                                            <int id="1" val="1"/>
+                                        </get-xy>
+                                        <int id="1" val="476"/>
+                                    </less>
+                                </if>
+                                <else comment="false" x="56" y="1263">
+                                    <group eventID="19" id="-1">
+                                        <set-val-6-43 comment="false" x="67" y="1283">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-6-43>
+                                    </group>
+                                </else>
+                            </group>
+                            <get-val-6-45 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <comment-short comment="false" x="45" y="1332">
+                            <int id="0" val="Si c&amp;#039;est fini, on remet le plancher, la gravité et la vitesse de déplacement à 0"/>
+                        </comment-short>
+                        <if comment="false" x="45" y="1352">
+                            <group eventID="9" id="-1">
+                                <set-dxy comment="false" x="56" y="1382">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val="0"/>
+                                </set-dxy>
+                                <repeat comment="false" x="56" y="1409">
+                                    <group eventID="2" id="-1">
+                                        <set-tile-at comment="false" x="67" y="1434">
+                                            <int id="0" val="28"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="1"/>
+                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <get-game-val-1 comment="false" id="2" x="0" y="0"/>
+                                            <get-game-val-0 comment="false" id="3" x="0" y="0"/>
+                                            <int id="4" val="1"/>
+                                        </set-tile-at>
+                                    </group>
+                                    <int id="0" val="5"/>
+                                </repeat>
+                                <toggle-grav comment="false" x="56" y="1476">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="0"/>
+                                </toggle-grav>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <get-val-6-43 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </if>
+                    </group>
+                    <get-val-6-43 comment="false" id="0" x="0" y="0"/>
+                </if>
             </group>
         </step>
     </group>
@@ -678,13 +1006,9 @@
     <group eventID="10" id="0">
         <event-actor-region comment="false" x="15" y="15">
             <group eventID="10" id="-1">
-                <print comment="false" x="26" y="42">
-                    <int id="0" val="exit hole"/>
-                </print>
-                <set-val-6-15 comment="false" x="26" y="62">
+                <set-val-6-15 comment="false" x="26" y="42">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-val-6-15>
-                <custom-31 comment="false" x="26" y="87"/>
             </group>
             <int id="0" val="1"/>
             <REGION eid="var" id="1" vid="12"/>
@@ -698,6 +1022,14 @@
         <clear-list comment="false" x="86" y="383">
             <get-val-6-19 comment="false" id="0" x="0" y="0"/>
         </clear-list>
+    </group>
+    <group eventID="10" id="2">
+        <print comment="false" x="432" y="252">
+            <int id="0" val="exit hole"/>
+        </print>
+    </group>
+    <group eventID="10" id="3">
+        <custom-31 comment="false" x="25" y="146"/>
     </group>
     <group eventID="10" id="-1"/>
     <group eventID="14" id="0">
@@ -777,33 +1109,128 @@
     <group eventID="19" id="0">
         <event-key-press-release comment="false" x="15" y="15">
             <group eventID="19" id="-1">
-                <comment-short comment="false" x="26" y="42">
+                <if comment="false" x="26" y="42">
+                    <group eventID="19" id="-1">
+                        <stop comment="false" x="37" y="67"/>
+                    </group>
+                    <get-val-6-43 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <comment-short comment="false" x="26" y="99">
                     <int id="0" val="bouton power"/>
                 </comment-short>
-                <if comment="false" x="26" y="62">
+                <if comment="false" x="26" y="119">
                     <group eventID="19" id="-1">
-                        <custom-31 comment="false" x="37" y="97"/>
-                        <custom-16 comment="false" x="37" y="117">
-                            <int id="0" val="It doesn&amp;#039;t work ! It seems to be broken !"/>
+                        <set-val-6-39 comment="false" x="37" y="154">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-6-39>
+                        <custom-31 comment="false" x="37" y="179"/>
+                        <custom-16 comment="false" x="37" y="199">
+                            <int id="0" val="It doesn&amp;#039;t work... this should to be broken !"/>
                             <int id="1" val="1"/>
                             <int id="2" val="3"/>
-                            <int id="3" val="2"/>
+                            <int id="3" val="0.1"/>
                         </custom-16>
-                        <custom-16 comment="false" x="37" y="137">
+                        <custom-16 comment="false" x="37" y="219">
                             <int id="0" val="Damned consumer society..."/>
                             <int id="1" val="2"/>
                             <int id="2" val="2"/>
-                            <int id="3" val="1"/>
+                            <int id="3" val="0.1"/>
+                        </custom-16>
+                        <custom-16 comment="false" x="37" y="239">
+                            <int id="0" val="We must find another way to turn off the tv"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="2"/>
+                            <int id="3" val="0.1"/>
                         </custom-16>
                     </group>
                     <and comment="false" id="0" x="0" y="0">
                         <not comment="false" id="0" x="0" y="0">
                             <get-val-6-2 comment="false" id="0" x="0" y="0"/>
                         </not>
-                        <and comment="false" id="1" x="0" y="0">
-                            <get-val-6-15 comment="false" id="0" x="0" y="0"/>
-                            <get-val-6-17 comment="false" id="1" x="0" y="0"/>
-                        </and>
+                        <get-val-6-15 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </if>
+                <comment-short comment="false" x="26" y="271">
+                    <int id="0" val="stairs"/>
+                </comment-short>
+                <if comment="false" x="26" y="291">
+                    <group eventID="19" id="-1">
+                        <set-val-6-43 comment="false" x="37" y="321">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-6-43>
+                        <comment-short comment="false" x="37" y="346">
+                            <int id="0" val="on enlève le plancher et la gravité"/>
+                        </comment-short>
+                        <repeat comment="false" x="37" y="366">
+                            <group eventID="2" id="-1">
+                                <remove-tile-at comment="false" x="48" y="391">
+                                    <int id="0" val="28"/>
+                                    <plus comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                    </plus>
+                                    <get-game-val-1 comment="false" id="2" x="0" y="0"/>
+                                </remove-tile-at>
+                            </group>
+                            <int id="0" val="5"/>
+                        </repeat>
+                        <toggle-grav comment="false" x="37" y="433">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                            <int id="1" val="1"/>
+                        </toggle-grav>
+                        <comment-short comment="false" x="37" y="460">
+                            <int id="0" val="et on lance le déplacement"/>
+                        </comment-short>
+                        <if comment="false" x="37" y="480">
+                            <group eventID="19" id="-1">
+                                <set-val-6-44 comment="false" x="48" y="518">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-6-44>
+                                <set-val-6-45 comment="false" x="48" y="543">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-6-45>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <int id="1" val="455"/>
+                            </more>
+                        </if>
+                        <else comment="false" x="37" y="580">
+                            <group eventID="19" id="-1">
+                                <set-val-6-44 comment="false" x="48" y="600">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-6-44>
+                                <set-val-6-45 comment="false" x="48" y="625">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-6-45>
+                            </group>
+                        </else>
+                        <custom-31 comment="false" x="37" y="662"/>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-6-2 comment="false" id="0" x="0" y="0"/>
+                        <get-val-6-42 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </if>
+                <comment-short comment="false" x="26" y="694">
+                    <int id="0" val="jump"/>
+                </comment-short>
+                <if comment="false" x="26" y="714">
+                    <group eventID="19" id="-1">
+                        <push-shove comment="false" x="37" y="744">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="-1"/>
+                            <int id="4" val="70"/>
+                        </push-shove>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-6-2 comment="false" id="0" x="0" y="0"/>
+                        <get-val-6-47 comment="false" id="1" x="0" y="0"/>
                     </and>
                 </if>
             </group>
@@ -817,26 +1244,36 @@
             <group eventID="1" id="-1">
                 <if comment="false" x="58" y="131">
                     <group eventID="3" id="-1">
-                        <set-val-6-2 comment="false" x="69" y="156">
+                        <set-val-6-2 comment="false" x="69" y="171">
                             <not comment="false" id="0" x="0" y="0">
                                 <get-val-6-2 comment="false" id="0" x="0" y="0"/>
                             </not>
                         </set-val-6-2>
-                        <say-this comment="false" x="69" y="186">
+                        <say-this comment="false" x="69" y="201">
                             <int id="0" val="update_collision"/>
                         </say-this>
-                        <comment-short comment="false" x="69" y="206">
+                        <comment-short comment="false" x="69" y="221">
                             <int id="0" val="reset des dialogues après chaque téléportation"/>
                         </comment-short>
-                        <custom-31 comment="false" x="69" y="226"/>
-                        <comment-short comment="false" x="69" y="246">
+                        <custom-31 comment="false" x="69" y="241"/>
+                        <comment-short comment="false" x="69" y="261">
                             <int id="0" val="après le premier téléport on a plus le dialogue du hole"/>
                         </comment-short>
-                        <set-val-6-17 comment="false" x="69" y="266">
+                        <set-val-6-17 comment="false" x="69" y="281">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-6-17>
                     </group>
-                    <get-val-6-38 comment="false" id="0" x="0" y="0"/>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-6-38 comment="false" id="0" x="0" y="0"/>
+                        <and comment="false" id="1" x="0" y="0">
+                            <not comment="false" id="0" x="0" y="0">
+                                <get-val-6-43 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                            <not comment="false" id="1" x="0" y="0">
+                                <get-val-6-52 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </and>
+                    </and>
                 </if>
             </group>
             <CONTROL eid="4" id="0"/>
@@ -856,9 +1293,9 @@
                             <int id="0" val="0"/>
                         </set-val-6-29>
                         <custom-16 comment="false" x="37" y="110">
-                            <int id="0" val="use LEFT and RIGHT to move"/>
+                            <int id="0" val="Press LEFT and RIGHT to move"/>
                             <int id="1" val="3"/>
-                            <int id="2" val="5"/>
+                            <int id="2" val="4"/>
                             <int id="3" val="1"/>
                         </custom-16>
                         <say comment="false" x="37" y="130">
@@ -1030,122 +1467,255 @@
                     <group eventID="9" id="-1">
                         <if comment="false" x="37" y="807">
                             <group eventID="20" id="-1">
-                                <custom-16 comment="false" x="48" y="837">
+                                <custom-16 comment="false" x="48" y="842">
                                     <int id="0" val="I can see the TV power button !"/>
                                     <int id="1" val="1"/>
                                     <int id="2" val="3"/>
-                                    <int id="3" val="2"/>
+                                    <int id="3" val="0"/>
                                 </custom-16>
-                                <custom-16 comment="false" x="48" y="857">
+                                <custom-16 comment="false" x="48" y="862">
                                     <int id="0" val="Try to switch off !"/>
                                     <int id="1" val="2"/>
-                                    <int id="2" val="4"/>
-                                    <int id="3" val="1"/>
+                                    <int id="2" val="2"/>
+                                    <int id="3" val="0.5"/>
                                 </custom-16>
-                                <custom-16 comment="false" x="48" y="877">
-                                    <int id="0" val="use UP to interact with the button"/>
+                                <custom-16 comment="false" x="48" y="882">
+                                    <int id="0" val="Press UP to interact with the button"/>
                                     <int id="1" val="3"/>
-                                    <int id="2" val="5"/>
-                                    <int id="3" val="1"/>
+                                    <int id="2" val="4"/>
+                                    <int id="3" val="0.5"/>
                                 </custom-16>
                             </group>
-                            <not comment="false" id="0" x="0" y="0">
-                                <get-val-6-2 comment="false" id="0" x="0" y="0"/>
-                            </not>
+                            <and comment="false" id="0" x="0" y="0">
+                                <not comment="false" id="0" x="0" y="0">
+                                    <get-val-6-2 comment="false" id="0" x="0" y="0"/>
+                                </not>
+                                <get-val-6-39 comment="false" id="1" x="0" y="0"/>
+                            </and>
                         </if>
-                        <else-if comment="false" x="37" y="909">
+                        <else-if comment="false" x="37" y="914">
                             <group eventID="20" id="-1">
-                                <set-val-6-38 comment="false" x="48" y="934">
+                                <set-val-6-38 comment="false" x="48" y="944">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-6-38>
-                                <custom-16 comment="false" x="48" y="959">
+                                <custom-16 comment="false" x="48" y="969">
                                     <int id="0" val="Walls everywhere ! I am stuck !"/>
                                     <int id="1" val="1"/>
                                     <int id="2" val="3"/>
                                     <int id="3" val="1"/>
                                 </custom-16>
-                                <custom-16 comment="false" x="48" y="979">
+                                <custom-16 comment="false" x="48" y="989">
                                     <int id="0" val="Don&amp;#039;t panic, walls will disappear !"/>
                                     <int id="1" val="2"/>
                                     <int id="2" val="4"/>
                                     <int id="3" val="1"/>
                                 </custom-16>
-                                <custom-16 comment="false" x="48" y="999">
+                                <custom-16 comment="false" x="48" y="1009">
                                     <int id="0" val="How ?"/>
                                     <int id="1" val="1"/>
                                     <int id="2" val="2"/>
                                     <int id="3" val="1"/>
                                 </custom-16>
-                                <custom-16 comment="false" x="48" y="1019">
+                                <custom-16 comment="false" x="48" y="1029">
                                     <int id="0" val="You have to teleport in the other world"/>
-                                    <int id="1" val="1"/>
+                                    <int id="1" val="2"/>
                                     <int id="2" val="2"/>
                                     <int id="3" val="1"/>
                                 </custom-16>
-                                <custom-16 comment="false" x="48" y="1039">
-                                    <int id="0" val="Walls are only in our world"/>
+                                <custom-16 comment="false" x="48" y="1049">
+                                    <int id="0" val="These walls are only in our world"/>
                                     <int id="1" val="2"/>
                                     <int id="2" val="4"/>
                                     <int id="3" val="1"/>
                                 </custom-16>
-                                <custom-16 comment="false" x="48" y="1059">
-                                    <int id="0" val="use E to teleport"/>
+                                <custom-16 comment="false" x="48" y="1069">
+                                    <int id="0" val="Press E to teleport"/>
                                     <int id="1" val="3"/>
                                     <int id="2" val="5"/>
                                     <int id="3" val="1"/>
                                 </custom-16>
                             </group>
-                            <get-val-6-17 comment="false" id="0" x="0" y="0"/>
+                            <and comment="false" id="0" x="0" y="0">
+                                <get-val-6-2 comment="false" id="0" x="0" y="0"/>
+                                <get-val-6-17 comment="false" id="1" x="0" y="0"/>
+                            </and>
                         </else-if>
                     </group>
                     <get-val-6-15 comment="false" id="0" x="0" y="0"/>
                 </else-if>
+                <else-if comment="false" x="26" y="1113">
+                    <group eventID="20" id="-1">
+                        <custom-16 comment="false" x="37" y="1143">
+                            <int id="0" val="It&amp;#039;s very dark here"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="2"/>
+                            <int id="3" val="0"/>
+                        </custom-16>
+                        <custom-16 comment="false" x="37" y="1163">
+                            <int id="0" val="I must be in a cave or something"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="2"/>
+                            <int id="3" val="1"/>
+                        </custom-16>
+                        <custom-16 comment="false" x="37" y="1183">
+                            <int id="0" val="I don&amp;#039;t like this place, I should go out soon"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="2"/>
+                            <int id="3" val="1"/>
+                        </custom-16>
+                        <custom-16 comment="false" x="37" y="1203">
+                            <int id="0" val="I think I saw some light to the left"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="2"/>
+                            <int id="3" val="1"/>
+                        </custom-16>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-6-2 comment="false" id="0" x="0" y="0"/>
+                        <get-val-6-36 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </else-if>
+                <else-if comment="false" x="26" y="1235">
+                    <group eventID="20" id="-1">
+                        <custom-16 comment="false" x="37" y="1265">
+                            <int id="0" val="There is a kind of stairs"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="2"/>
+                            <int id="3" val="0"/>
+                        </custom-16>
+                        <custom-16 comment="false" x="37" y="1285">
+                            <int id="0" val="Perhaps I should use this way"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="2"/>
+                            <int id="3" val="1"/>
+                        </custom-16>
+                        <custom-16 comment="false" x="37" y="1305">
+                            <int id="0" val="Should I go upstairs ?"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="2"/>
+                            <int id="3" val="1"/>
+                        </custom-16>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-6-2 comment="false" id="0" x="0" y="0"/>
+                        <get-val-6-42 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </else-if>
+                <else-if comment="false" x="26" y="1337">
+                    <group eventID="20" id="-1">
+                        <custom-16 comment="false" x="37" y="1367">
+                            <int id="0" val="The ground seems strange here"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="2"/>
+                            <int id="3" val="0"/>
+                        </custom-16>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-6-2 comment="false" id="0" x="0" y="0"/>
+                        <get-val-6-47 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </else-if>
+                <else-if comment="false" x="26" y="1399">
+                    <group eventID="20" id="-1">
+                        <scene-change-new comment="false" x="37" y="1424">
+                            <SCENE eid="2" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val="1"/>
+                        </scene-change-new>
+                    </group>
+                    <get-val-6-53 comment="false" id="0" x="0" y="0"/>
+                </else-if>
+                <else-if comment="false" x="26" y="1463">
+                    <group eventID="20" id="-1">
+                        <set-attribute comment="false" x="37" y="1493">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                            <int id="1" val="Player"/>
+                            <int id="2" val="_active"/>
+                            <false comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <custom-16 comment="false" x="37" y="1525">
+                            <int id="0" val="Oh look at this, it&amp;#039;s a blue Police Box !"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="3"/>
+                            <int id="3" val="0"/>
+                        </custom-16>
+                        <custom-16 comment="false" x="37" y="1545">
+                            <int id="0" val="Really ? Go inside !"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="2"/>
+                            <int id="3" val="0"/>
+                        </custom-16>
+                        <custom-16 comment="false" x="37" y="1565">
+                            <int id="0" val="Ok"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="2"/>
+                            <int id="3" val="0"/>
+                        </custom-16>
+                        <custom-16 comment="false" x="37" y="1585">
+                            <int id="0" val="Oh, it&amp;#039;s bigger inside !"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="2"/>
+                            <int id="3" val="2"/>
+                        </custom-16>
+                        <custom-16 comment="false" x="37" y="1605">
+                            <int id="0" val="I knew it ! It&amp;#039;s a ship, look if there is a guy inside !"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="3"/>
+                            <int id="3" val="1"/>
+                        </custom-16>
+                        <custom-16 comment="false" x="37" y="1625">
+                            <int id="0" val="Yeap !"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="2"/>
+                            <int id="3" val="1"/>
+                        </custom-16>
+                        <custom-16 comment="false" x="37" y="1645">
+                            <int id="0" val="Ask him if he can help us !"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="2"/>
+                            <int id="3" val="1"/>
+                        </custom-16>
+                        <custom-16 comment="false" x="37" y="1665">
+                            <int id="0" val="Hello, can you bring me to the remote control please ?"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="4"/>
+                            <int id="3" val="2"/>
+                        </custom-16>
+                        <custom-16 comment="false" x="37" y="1685">
+                            <int id="0" val="Genorimo !"/>
+                            <int id="1" val="4"/>
+                            <int id="2" val="4"/>
+                            <int id="3" val="2"/>
+                        </custom-16>
+                        <set-val-6-53 comment="false" x="37" y="1705">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-6-53>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-6-2 comment="false" id="0" x="0" y="0"/>
+                        <get-val-6-52 comment="false" id="1" x="0" y="0"/>
+                    </and>
+                </else-if>
             </group>
         </receiver-5-30>
     </group>
-    <group eventID="9" id="3">
-        <custom-16 comment="false" x="565" y="1108">
-            <int id="0" val="I am tired, I want go to bed !"/>
-            <int id="1" val="1"/>
-            <int id="2" val="3"/>
-            <int id="3" val="1"/>
-        </custom-16>
-        <custom-16 comment="false" x="565" y="1128">
-            <int id="0" val="Me too, but don&amp;#039;t worry I know what to do !"/>
-            <int id="1" val="2"/>
-            <int id="2" val="4"/>
-            <int id="3" val="1"/>
-        </custom-16>
-        <custom-16 comment="false" x="565" y="1148">
-            <int id="0" val="Tell me !"/>
-            <int id="1" val="1"/>
-            <int id="2" val="2"/>
-            <int id="3" val="1"/>
-        </custom-16>
-    </group>
-    <group eventID="20" id="4">
-        <custom-16 comment="false" x="530" y="1061">
-            <int id="0" val="Just jump in the hole right here"/>
-            <int id="1" val="2"/>
-            <int id="2" val="3"/>
-            <int id="3" val="1"/>
-        </custom-16>
-    </group>
-    <group eventID="20" id="7">
-        <custom-16 comment="false" x="563" y="989">
-            <int id="0" val="You have to teleport in the other world"/>
-            <int id="1" val="1"/>
-            <int id="2" val="2"/>
-            <int id="3" val="2"/>
-        </custom-16>
-        <custom-16 comment="false" x="563" y="1009">
-            <int id="0" val="Walls are only in our world"/>
-            <int id="1" val="2"/>
-            <int id="2" val="4"/>
-            <int id="3" val="0.1"/>
-        </custom-16>
-    </group>
     <group eventID="20" id="-1"/>
+    <group eventID="23" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="23" id="-1">
+                <set-val-6-36 comment="false" x="26" y="42">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-6-36>
+                <custom-31 comment="false" x="26" y="67"/>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="var" id="1" vid="40"/>
+            <ACTOR eid="var" id="2" vid="1"/>
+        </event-actor-region>
+    </group>
+    <group eventID="23" id="-1"/>
     <group eventID="22" id="0">
         <receiver-6-31 comment="false" x="15" y="15">
             <group eventID="22" id="-1">
@@ -1155,8 +1725,107 @@
                 <clear-list comment="false" x="26" y="60">
                     <get-val-6-19 comment="false" id="0" x="0" y="0"/>
                 </clear-list>
+                <clear-list comment="false" x="26" y="85">
+                    <get-val-6-22 comment="false" id="0" x="0" y="0"/>
+                </clear-list>
+                <clear-list comment="false" x="26" y="110">
+                    <get-val-6-23 comment="false" id="0" x="0" y="0"/>
+                </clear-list>
+                <clear-list comment="false" x="26" y="135">
+                    <get-val-6-25 comment="false" id="0" x="0" y="0"/>
+                </clear-list>
             </group>
         </receiver-6-31>
     </group>
     <group eventID="22" id="-1"/>
+    <group eventID="25" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="25" id="-1">
+                <set-val-6-42 comment="false" x="26" y="42">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-6-42>
+                <custom-31 comment="false" x="26" y="67"/>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="var" id="1" vid="41"/>
+            <ACTOR eid="var" id="2" vid="1"/>
+        </event-actor-region>
+    </group>
+    <group eventID="25" id="-1"/>
+    <group eventID="24" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="24" id="-1">
+                <set-val-6-36 comment="false" x="26" y="42">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-6-36>
+            </group>
+            <int id="0" val="1"/>
+            <REGION eid="var" id="1" vid="40"/>
+            <ACTOR eid="var" id="2" vid="1"/>
+        </event-actor-region>
+    </group>
+    <group eventID="24" id="1">
+        <custom-31 comment="false" x="92" y="207"/>
+    </group>
+    <group eventID="24" id="-1"/>
+    <group eventID="27" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="27" id="-1">
+                <set-val-6-47 comment="false" x="26" y="42">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-6-47>
+                <custom-31 comment="false" x="26" y="67"/>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="var" id="1" vid="48"/>
+            <ACTOR eid="var" id="2" vid="1"/>
+        </event-actor-region>
+    </group>
+    <group eventID="27" id="-1"/>
+    <group eventID="26" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="26" id="-1">
+                <set-val-6-42 comment="false" x="26" y="42">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-6-42>
+            </group>
+            <int id="0" val="1"/>
+            <REGION eid="var" id="1" vid="41"/>
+            <ACTOR eid="var" id="2" vid="1"/>
+        </event-actor-region>
+    </group>
+    <group eventID="26" id="1">
+        <custom-31 comment="false" x="92" y="227"/>
+    </group>
+    <group eventID="26" id="-1"/>
+    <group eventID="28" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="28" id="-1">
+                <set-val-6-47 comment="false" x="26" y="42">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-6-47>
+            </group>
+            <int id="0" val="1"/>
+            <REGION eid="var" id="1" vid="48"/>
+            <ACTOR eid="var" id="2" vid="1"/>
+        </event-actor-region>
+    </group>
+    <group eventID="28" id="1">
+        <custom-31 comment="false" x="105" y="206"/>
+    </group>
+    <group eventID="28" id="-1"/>
+    <group eventID="30" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="30" id="-1">
+                <set-val-6-52 comment="false" x="26" y="42">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-6-52>
+                <custom-31 comment="false" x="26" y="67"/>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="var" id="1" vid="51"/>
+            <ACTOR eid="var" id="2" vid="1"/>
+        </event-actor-region>
+    </group>
+    <group eventID="30" id="-1"/>
 </groups>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="52" y="44">
+            <group eventID="1" id="-1">
+                <set-font-new comment="false" x="63" y="69">
+                    <FONT eid="17" id="0"/>
+                </set-font-new>
+                <set-val-23-1 comment="false" x="63" y="96">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <times comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0.5"/>
+                            <screen-wh comment="false" id="1" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </screen-wh>
+                        </times>
+                        <times comment="false" id="1" x="0" y="0">
+                            <int id="0" val="0.5"/>
+                            <get-font-width2-new comment="false" id="1" x="0" y="0">
+                                <FONT eid="17" id="0"/>
+                                <get-val-23-2 comment="false" id="1" x="0" y="0"/>
+                            </get-font-width2-new>
+                        </times>
+                    </minus>
+                </set-val-23-1>
+                <set-val-23-3 comment="false" x="63" y="144">
+                    <times comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0.4"/>
+                        <screen-wh comment="false" id="1" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </screen-wh>
+                    </times>
+                </set-val-23-3>
+                <draw-text comment="false" x="63" y="182">
+                    <get-val-23-2 comment="false" id="0" x="0" y="0"/>
+                    <get-val-23-1 comment="false" id="1" x="0" y="0"/>
+                    <get-val-23-3 comment="false" id="2" x="0" y="0"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-key-any-press-release comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <scene-change-new comment="false" x="26" y="47">
+                    <SCENE eid="1" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="2"/>
+                    <int id="3" val="0"/>
+                    <int id="4" val="2"/>
+                </scene-change-new>
+            </group>
+            <int id="0" val="0"/>
+        </event-key-any-press-release>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>
